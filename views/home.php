@@ -1,3 +1,4 @@
+<a href="<?php echo BASE_URL; ?>">[ ADICIONAR ]</a>
 <table border="1" width="100%">
 	<tr>
 		<th>ID</th>
@@ -11,7 +12,7 @@
 			<td><?php echo $item['nome']; ?></td>
 			<td><?php echo $item['email']; ?></td>
 			<td>
-			
+				
 			</td>
 		</tr>
 	<?php endforeach; ?>
