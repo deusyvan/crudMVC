@@ -1,14 +1,12 @@
 <?php
 class homeController extends controller {
     
-    private $user;
-    
-    public function __construct() {
-        parent::__construct();
-    }
-    
     public function index() {
         $data = array();
+        
+        $contatos = new Contatos();
+        
+        $dados['lista'] = $contatos->getAll();
         
         $this->loadTemplate('home', $data);
     }
