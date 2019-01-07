@@ -8,7 +8,7 @@ class homeController extends controller {
         
         $dados['lista'] = $contatos->getAll();
         
-        $this->loadTemplate('home', $data);
+        $this->loadTemplate('home', $dados);
     }
     
 }
