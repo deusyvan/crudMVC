@@ -22,6 +22,10 @@ class  Contatos extends model{
             $sql->bindValue(':nome',$nome);
             $sql->bindValue(':email',$email);
             $sql->execute();
+            //se adicionar 
+            return TRUE;
+        } else {
+            return FALSE;
         }
     }
     

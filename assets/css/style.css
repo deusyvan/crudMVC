@@ -17,3 +17,10 @@ footer {
 	height: 100px;
 	text-align: center;
 }
+
+.aviso {
+	padding: 10px;
+	background-color: #FF0000;
+	border: 2px solid #FFFFFF;
+	margin: 10px;
+}
