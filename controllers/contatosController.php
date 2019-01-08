@@ -11,6 +11,14 @@ class contatosController extends controller{
     }
     
     public function add_save(){
-        print_r($_POST);
+        if(!empty($_POST['email'])){
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            
+            $contatos = new Contatos();
+            $contatos->add($nome, $email);
+            
+            header("Location: ".BASE_URL);
+        }
     }
 }
